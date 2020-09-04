@@ -17,7 +17,7 @@
     <script src="js/model.js" onload="editPoll(1)"></script>
     <script>
         //Changepage
-        QUnit.module('Page should be editPoll', function() {
+        QUnit.module('Page = "editPoll currentPoll = 1"', function() {
           QUnit.test('Does it go to editPoll page?', function(assert) {
             assert.equal(true, model.app.currentPage == "editPoll" && model.app.currentPoll == 1);
           });
